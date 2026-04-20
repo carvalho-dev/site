@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paróquia São Francisco Xavier</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+}
+
+/* TOPO */
+.topo {
+  background: #d4ad00;
+  color: white;
+  padding: 10px 360px; /* alinhado com container */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  object-fit: contain;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* BUSCA */
+.busca {
+  flex: none;
+  margin: 0 20px;
+}
+
+.busca input {
+  padding: 10px 480px 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.redes {
+  width: 33px;
+  padding-left: 12px;
+}
+
+/* MENU */
+.menu {
+  background: white;
+  padding: 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 350px;
+}
+
+/* BANNER */
+.banner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* PRINCIPAL */
+.banner-principal {
+  background: url('https://images.unsplash.com/photo-1507692049790-de58290a4334') center/cover;
+  border-radius: 15px;
+  color: white;
+  padding: 0px 25px;
+  display: flex;
+  align-items: flex-end;
+  min-height: 320px;
+}
+
+.banner-principal h2 {
+  font-size: 28px;
+}
+
+/* LATERAL */
+.lateral {
+}
+
+/* CARD */
+.card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding:  10px 20px;
+  font-weight: bold;
+  font-size: 28px;
+  overflow: hidden;
+  min-height: 340px;
+}
+
+/* IMAGENS */
+.card2 {
+  background-image: url('foto2.webp');
+}
+
+/* BOTÕES */
+.botoes {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.botao {
+  padding: 10px 18px;
+  border: 2px solid #d4ad00;
+  border-radius: 25px;
+  color: #d4ad00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #d4ad00;
+  color: white;
+}
+
+/* NOTÍCIAS */
+.secao {
+  margin-top: 40px;
+}
+
+.secao h2 {
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.noticia {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.noticia img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.noticia p {
+  padding: 0px 20px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #d4ad00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+
+  .lateral {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topo {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- TOPO -->
+<div class="topo">
+  <div class="logo-area">
+    <img src="images (1).png" class="logo">
+  </div>
+
+  <div class="busca">
+    <input type="text" placeholder="Pesquisar notícias...">
+  </div>
+
+  <div>
+    <img class="redes" src="facebook.png" class="logo">
+    <img class="redes" src="instagram.png" class="logo">
+    <img class="redes" src="youtube.png" class="logo">
+    <img class="redes" src="whatsapp.png" class="logo">
+  </div>
+</div>
+
+<!-- MENU -->
+<div class="menu">
+  <a href="#">Home</a>
+  <a href="#">Paróquia</a>
+  <a href="#">Espiritualidade</a>
+  <a href="#">Notícias</a>
+  <a href="#">Eventos</a>
+  <a href="#">Contato</a>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="container">
+
+  <!-- BANNER -->
+  <div class="banner">
+
+    <div class="banner-principal">
+      <h2>Show Mensagem 2026 </h2>
+    </div>
+
+    <div class="lateral">
+      <div class="card card2">Padroeiro</div>
+    </div>
+
+  </div>
+
+  <!-- BOTÕES -->
+  <div class="botoes">
+    <a href="#" class="botao">Eventos</a>
+    <a href="#" class="botao">Bíblia</a>
+    <a href="#" class="botao">Liturgia</a>
+    <a href="#" class="botao">Santo do Dia</a>
+    <a href="#" class="botao">Orações</a>
+  </div>
+
+  <!-- NOTÍCIAS -->
+  <div class="secao">
+    <h2>Últimas Notícias</h2>
+
+    <div class="grid">
+      <div class="noticia">
+        <img src="WhatsApp Image 2026-04-19 at 21.13.15.jpeg">
+        <p>Missa Especial Sábado Santo</p>
+      </div>
+
+      <div class="noticia">
+        <img src="WhatsApp Image 2026-04-19 iu21.13.15.jpeg">
+        <p>Grupo de jovens em ação</p>
+      </div>
+
+      <div class="noticia">
+        <img src="sqw.jpeg">
+        <p>Evento comunitário</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- RODAPÉ -->
+<footer>
+  © 2026 - Paróquia São Francisco Xavier
+</footer>
+
+</body>
+</html>
